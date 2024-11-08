@@ -44,3 +44,100 @@
     font-style: normal;
 }
 
+
+$primary_color: #FCEED5;
+$secondary_color: #003459;
+
+body{
+    background-color: $primary_color;
+}
+
+header {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    color: $secondary_color;
+    height: 100px;
+    // background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav {
+        display: flex ;
+        // justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-inline: 200px;
+
+
+        &__logo img{
+            cursor: pointer;
+            width: 150px;
+            margin-right: 150px;
+        }
+
+        &__list{
+            margin-right: 150px;
+            &__ul{
+            display: flex;
+            gap: 60px;
+            list-style-type: none;
+            &__li {
+                cursor: pointer;
+            }
+            &__li:hover {
+                text-decoration: underline;
+            }
+        }
+        }
+        
+        &__button {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: 150px;
+
+            &__search {
+                padding: 10px 20px;
+                background-color: white;
+                display: flex;
+                gap: 15px;
+                border-radius: 30px;
+                width: 350px;
+                & input {
+                    padding: 5px ;
+                    font-family: 'Gilroy', sans-serif;
+                    font-weight: 500;
+                    color: inherit;
+                    border: none;
+                    width: 90%;
+                }
+                & input:focus {
+                    border: none;
+                    outline: none;
+                }
+                & img {
+                    width: 20px;
+                }
+            }
+            &__login {
+                background-color: $secondary_color;
+                color: white;
+                cursor: pointer;
+                padding: 15px 80px;
+                border-radius: 30px;
+                text-decoration: none;
+
+                & a {
+                    text-decoration: none;
+                    color: white;
+                }
+                & a:hover {
+                    text-decoration: underline;
+                    
+                }
+            }
+        }
+    }
+
+}

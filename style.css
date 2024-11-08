@@ -34,5 +34,87 @@
   font-weight: 500;
   font-style: normal;
 }
+body {
+  background-color: #FCEED5;
+}
+
+header {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  color: #003459;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-inline: 200px;
+}
+header .nav__logo img {
+  cursor: pointer;
+  width: 150px;
+  margin-right: 150px;
+}
+header .nav__list {
+  margin-right: 150px;
+}
+header .nav__list__ul {
+  display: flex;
+  gap: 60px;
+  list-style-type: none;
+}
+header .nav__list__ul__li {
+  cursor: pointer;
+}
+header .nav__list__ul__li:hover {
+  text-decoration: underline;
+}
+header .nav__button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 150px;
+}
+header .nav__button__search {
+  padding: 10px 20px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+  border-radius: 30px;
+  width: 350px;
+}
+header .nav__button__search input {
+  padding: 5px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  color: inherit;
+  border: none;
+  width: 90%;
+}
+header .nav__button__search input:focus {
+  border: none;
+  outline: none;
+}
+header .nav__button__search img {
+  width: 20px;
+}
+header .nav__button__login {
+  background-color: #003459;
+  color: white;
+  cursor: pointer;
+  padding: 15px 80px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+header .nav__button__login a {
+  text-decoration: none;
+  color: white;
+}
+header .nav__button__login a:hover {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=style.css.map */
