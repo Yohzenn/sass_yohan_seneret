@@ -36,30 +36,29 @@
 }
 body {
   background-color: #FCEED5;
+  font-family: "Gilroy", sans-serif;
 }
 
 header {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   color: #003459;
-  height: 100px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header .nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-inline: 200px;
+  flex-wrap: wrap;
 }
 header .nav__logo img {
   cursor: pointer;
   width: 150px;
-  margin-right: 150px;
-}
-header .nav__list {
-  margin-right: 150px;
 }
 header .nav__list__ul {
   display: flex;
@@ -75,8 +74,7 @@ header .nav__list__ul__li:hover {
 header .nav__button {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-left: 150px;
+  gap: 30px;
 }
 header .nav__button__search {
   padding: 10px 20px;
@@ -115,6 +113,242 @@ header .nav__button__login a {
 }
 header .nav__button__login a:hover {
   text-decoration: underline;
+}
+
+main {
+  width: 100%;
+}
+main .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+main .container .title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  color: #003459;
+  padding-left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+main .container .title__h1 {
+  font-weight: 800;
+  font-size: 5rem;
+}
+main .container .title__h2 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+main .container .title__p {
+  padding-block: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+main .container .title__btn {
+  font-weight: 500;
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+main .container .title__btn__intro {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  padding-block: 15px;
+  border-radius: 30px;
+  width: 170px;
+}
+main .container .title__btn__intro p:hover {
+  text-decoration: underline;
+}
+main .container .title__btn__intro img {
+  border: 1px solid #003459;
+  border-radius: 50%;
+}
+main .container .title__btn__explore {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  background-color: #003459;
+  padding-block: 15px;
+  border-radius: 30px;
+  width: 170px;
+  color: white;
+}
+main .container .title__btn__explore p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+main .article {
+  margin: auto;
+  width: 100%;
+  background-color: #FDFDFD;
+  padding: 50px 200px;
+}
+main .article__pres {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+main .article__pres__p {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+main .article__pres__h2 {
+  margin-top: 5px;
+  color: #003459;
+  font-weight: 700;
+  font-size: 2rem;
+}
+main .article__pres__btn {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  padding-block: 15px;
+  border-radius: 30px;
+  width: 170px;
+}
+main .article__pres__btn p {
+  color: #003459;
+  font-weight: 500;
+}
+main .article__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+main .article__container__box {
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+main .article__container__box__h3 {
+  font-weight: 700;
+  color: #003459;
+  padding-block: 20px;
+  font-size: 1.3rem;
+}
+main .article__container__box__p {
+  color: #667479;
+  font-weight: 500;
+}
+main .article__container__box__p span {
+  font-weight: 700;
+}
+main .article .friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gilroy", sans-serif;
+  color: #003459;
+  background-color: #FCEED5;
+  border-radius: 30px;
+}
+main .article .friend__more {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 100px;
+}
+main .article .friend__more__h1 {
+  font-weight: 800;
+  font-size: 4rem;
+}
+main .article .friend__more__h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+main .article .friend__more__p {
+  padding-block: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: end;
+}
+main .article .friend__more__btn {
+  font-weight: 500;
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+main .article .friend__more__btn__intro {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  padding-block: 15px;
+  border-radius: 30px;
+  width: 170px;
+}
+main .article .friend__more__btn__intro p:hover {
+  text-decoration: underline;
+}
+main .article .friend__more__btn__intro img {
+  border: 1px solid #003459;
+  border-radius: 50%;
+}
+main .article .friend__more__btn__explore {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  background-color: #003459;
+  padding-block: 15px;
+  border-radius: 30px;
+  width: 170px;
+  color: white;
+}
+main .article .friend__more__btn__explore p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+main .article__know {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+main .article__know__p {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+main .article__know__h2 {
+  margin-top: 5px;
+  color: #003459;
+  font-weight: 700;
+  font-size: 2rem;
+}
+main .article__know__btn {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #003459;
+  padding-block: 15px;
+  border-radius: 30px;
+  width: 170px;
+}
+main .article__know__btn p {
+  color: #003459;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

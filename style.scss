@@ -1,3 +1,6 @@
+$primary_color: #FCEED5;
+$secondary_color: #003459;
+
 * {
     padding: 0;
     margin: 0;
@@ -45,18 +48,18 @@
 }
 
 
-$primary_color: #FCEED5;
-$secondary_color: #003459;
+
 
 body{
     background-color: $primary_color;
+    font-family: 'Gilroy', sans-serif;
 }
 
 header {
     font-family: 'Gilroy', sans-serif;
     font-weight: 700;
     color: $secondary_color;
-    height: 100px;
+    padding:50px;
     // background-color: lightcoral;
     display: flex;
     justify-content: center;
@@ -64,20 +67,21 @@ header {
 
     .nav {
         display: flex ;
-        // justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         margin-inline: 200px;
+        flex-wrap: wrap;
 
 
         &__logo img{
             cursor: pointer;
             width: 150px;
-            margin-right: 150px;
+            // margin-right: 150px;
         }
 
         &__list{
-            margin-right: 150px;
+            // margin-right: 150px;
             &__ul{
             display: flex;
             gap: 60px;
@@ -94,8 +98,8 @@ header {
         &__button {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-left: 150px;
+            gap: 30px;
+            // margin-left: 150px;
 
             &__search {
                 padding: 10px 20px;
@@ -139,5 +143,278 @@ header {
             }
         }
     }
+
+
+
+}
+
+main {
+    
+    width: 100%;
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        .title {
+            font-family: 'Gilroy', sans-serif;
+            font-weight: 700;
+            color: $secondary_color;
+            padding-left: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+
+            &__h1 {
+                font-weight: 800;
+                font-size: 5rem;
+            }
+            &__h2 {
+                font-weight: 700;
+                font-size: 4rem;
+            }
+
+            &__p {
+                padding-block: 40px;
+                font-weight: 500;
+                font-size: 1rem;
+            }
+
+            &__btn {
+                font-weight: 500;
+                display: flex;
+                gap: 30px;
+                cursor: pointer;
+                &__intro {
+                    cursor: pointer;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $secondary_color;
+                    padding-block: 15px;
+                    border-radius: 30px;
+                    width: 170px;
+
+                    & p:hover {
+                        text-decoration: underline;
+                    }
+                    & img {
+                        border: 1px solid $secondary_color;
+                        border-radius: 50%;
+                    }
+                }
+
+                &__explore {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $secondary_color;
+                    background-color: $secondary_color;
+                    padding-block: 15px;
+                    border-radius: 30px;
+                    width: 170px;
+                    color: white;
+
+                    & p:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }   
+    }
+
+    .article {
+        margin: auto;
+        width: 100%;
+        background-color: #FDFDFD;
+        padding: 50px 200px;
+
+        &__pres {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &__p{
+                color: black;
+                font-weight: 500;
+                font-size: 1.2rem;   
+            }
+            &__h2 {
+                margin-top: 5px;
+                color: $secondary_color;
+                font-weight: 700;
+                font-size: 2rem;  
+
+            }
+
+            &__btn {
+               cursor: pointer;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;    
+                    justify-content: center;
+                    border: 1px solid $secondary_color;
+                    padding-block: 15px;
+                    border-radius: 30px;
+                    width: 170px;
+                & p{
+                    color: $secondary_color;
+                    font-weight: 500;
+                }
+            }
+        }
+        
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+
+            &__box {
+                padding: 10px;
+                background-color: white;
+                border-radius: 15px;
+                margin-top: 40px;
+             
+                &__h3 {
+                    font-weight: 700;
+                    color: $secondary_color;
+                    padding-block: 20px;
+                    font-size: 1.3rem;
+
+                }
+
+                &__p {
+
+                    color: #667479;
+                    font-weight: 500;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .friend {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Gilroy', sans-serif;
+            color: $secondary_color;
+            background-color: $primary_color;
+            border-radius: 30px;
+            &__more {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-right: 100px;
+
+                &__h1 {
+                font-weight: 800;
+                font-size: 4rem;
+            }
+            &__h2 {
+                font-weight: 700;
+                font-size: 3rem;
+            }
+
+            &__p {
+                padding-block: 20px;
+                font-weight: 500;
+                font-size: 1rem;
+                text-align: end;
+            }
+
+            &__btn {
+                font-weight: 500;
+                display: flex;
+                gap: 30px;
+                cursor: pointer;
+                &__intro {
+                    cursor: pointer;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $secondary_color;
+                    padding-block: 15px;
+                    border-radius: 30px;
+                    width: 170px;
+
+                    & p:hover {
+                        text-decoration: underline;
+                    }
+                    & img {
+                        border: 1px solid $secondary_color;
+                        border-radius: 50%;
+                    }
+                }
+
+                &__explore {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $secondary_color;
+                    background-color: $secondary_color;
+                    padding-block: 15px;
+                    border-radius: 30px;
+                    width: 170px;
+                    color: white;
+
+                    & p:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+            }
+        }
+
+        
+
+        &__know {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 50px;
+
+            &__p{
+                color: black;
+                font-weight: 500;
+                font-size: 1.2rem;   
+            }
+            &__h2 {
+                margin-top: 5px;
+                color: $secondary_color;
+                font-weight: 700;
+                font-size: 2rem;  
+
+            }
+
+            &__btn {
+               cursor: pointer;
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;    
+                    justify-content: center;
+                    border: 1px solid $secondary_color;
+                    padding-block: 15px;
+                    border-radius: 30px;
+                    width: 170px;
+                & p{
+                    color: $secondary_color;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
 
 }
