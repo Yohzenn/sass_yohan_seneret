@@ -121,8 +121,8 @@ main {
 }
 main .container {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
 }
 main .container .title {
@@ -149,22 +149,25 @@ main .container .title__p {
   font-size: 1rem;
 }
 main .container .title__btn {
-  font-weight: 500;
   display: flex;
   gap: 30px;
-  cursor: pointer;
 }
 main .container .title__btn__intro {
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
-  gap: 15px;
+  font-weight: 500;
   align-items: center;
-  justify-content: center;
   border: 1px solid #003459;
   padding-block: 15px;
-  border-radius: 30px;
   width: 170px;
+  justify-content: center;
+  gap: 15px;
+  gap: 15px;
   background-color: #FCEED5;
+}
+main .container .title__btn__intro a {
+  text-decoration: none;
 }
 main .container .title__btn__intro a:hover {
   text-decoration: underline;
@@ -174,19 +177,25 @@ main .container .title__btn__intro img {
   border-radius: 50%;
 }
 main .container .title__btn__explore {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #003459;
-  background-color: #003459;
-  padding-block: 15px;
   border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  border: 1px solid #003459;
+  padding-block: 15px;
   width: 170px;
+  justify-content: center;
+  gap: 15px;
+  gap: 15px;
+  justify-content: center;
+  background-color: #003459;
   color: white;
 }
+main .container .title__btn__explore a {
+  text-decoration: none;
+}
 main .container .title__btn__explore a:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 main .article {
@@ -212,27 +221,27 @@ main .article__pres__h2 {
   font-size: 2rem;
 }
 main .article__pres__btn {
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
-  gap: 15px;
+  font-weight: 500;
   align-items: center;
-  justify-content: center;
   border: 1px solid #003459;
   padding-block: 15px;
-  border-radius: 30px;
   width: 170px;
+  justify-content: center;
+  gap: 15px;
 }
 main .article__pres__btn a {
-  color: #003459;
-  font-weight: 500;
+  text-decoration: none;
 }
 main .article__pres__btn a:hover {
   text-decoration: underline;
 }
 main .article__container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 main .article__container__box {
@@ -292,15 +301,19 @@ main .article .friend__more__btn {
   cursor: pointer;
 }
 main .article .friend__more__btn__intro {
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
-  gap: 15px;
+  font-weight: 500;
   align-items: center;
-  justify-content: center;
   border: 1px solid #003459;
   padding-block: 15px;
-  border-radius: 30px;
   width: 170px;
+  justify-content: center;
+  gap: 15px;
+}
+main .article .friend__more__btn__intro a {
+  text-decoration: none;
 }
 main .article .friend__more__btn__intro a:hover {
   text-decoration: underline;
@@ -310,19 +323,23 @@ main .article .friend__more__btn__intro img {
   border-radius: 50%;
 }
 main .article .friend__more__btn__explore {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #003459;
-  background-color: #003459;
-  padding-block: 15px;
   border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  border: 1px solid #003459;
+  padding-block: 15px;
   width: 170px;
+  justify-content: center;
+  gap: 15px;
+  background-color: #003459;
   color: white;
 }
+main .article .friend__more__btn__explore a {
+  text-decoration: none;
+}
 main .article .friend__more__btn__explore a:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 main .article__know {
@@ -343,19 +360,19 @@ main .article__know__h2 {
   font-size: 2rem;
 }
 main .article__know__btn {
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
-  gap: 15px;
+  font-weight: 500;
   align-items: center;
-  justify-content: center;
   border: 1px solid #003459;
   padding-block: 15px;
-  border-radius: 30px;
   width: 170px;
+  justify-content: center;
+  gap: 15px;
 }
 main .article__know__btn a {
-  color: #003459;
-  font-weight: 500;
+  text-decoration: none;
 }
 main .article__know__btn a:hover {
   text-decoration: underline;
@@ -414,15 +431,16 @@ main .article .knowledge__box__p {
   font-size: 1.8rem;
 }
 .footer .register__input {
+  display: flex;
+  align-items: center;
   border-radius: 10px;
   width: 60%;
-  display: flex;
   padding: 15px;
   background-color: white;
-  align-items: center;
   gap: 10px;
 }
 .footer .register__input__mail {
+  font-size: 1.3rem;
   padding: 20px 30px;
   width: 70%;
   border: 1px solid #99A2A5;
@@ -433,9 +451,11 @@ main .article .knowledge__box__p {
 }
 .footer .register__input__btn {
   width: 30%;
+  font-size: 1.3rem;
   text-align: center;
   background-color: #003459;
   color: white;
+  font-weight: 600;
   padding: 20px 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -453,6 +473,9 @@ main .article .knowledge__box__p {
 .footer__nav__list a {
   text-decoration: none;
   color: #003459;
+}
+.footer__nav__list a:hover {
+  text-decoration: underline;
 }
 .footer__nav__social {
   display: flex;

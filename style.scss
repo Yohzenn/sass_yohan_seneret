@@ -23,6 +23,12 @@ $text-white: white;
     cursor: pointer;
     display:flex;
     font-weight: 500;
+    align-items: center;
+    border: 1px solid $secondary_color;
+    padding-block: 15px;
+    width: 170px;
+    justify-content: center;
+    gap: 15px;
     a {
         text-decoration: none;
     }
@@ -185,17 +191,15 @@ main {
     
     width: 100%;
     .container {
-        display: flex;
+        @include flex-between;
         align-items: flex-start;
-        justify-content: space-between;
         width: 100%;
         .title {
             font-family: $font;
             font-weight: 700;
             color: $secondary_color;
             padding-left: 200px;
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             align-items: center;
             padding-top: 100px;
 
@@ -215,25 +219,15 @@ main {
             }
 
             &__btn {
-                font-weight: 500;
+
                 display: flex;
                 gap: 30px;
-                cursor: pointer;
                 &__intro {
-                    cursor: pointer;
-                    display: flex;
+                    @include btn;
                     gap: 15px;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid $secondary_color;
-                    padding-block: 15px;
-                    border-radius: 30px;
-                    width: 170px;
+                    
                     background-color: $primary_color;
 
-                    & a:hover {
-                        text-decoration: underline;
-                    }
                     & img {
                         border: 1px solid $secondary_color;
                         border-radius: 50%;
@@ -241,21 +235,11 @@ main {
                 }
 
                 &__explore {
-                    display: flex;
+                    @include btn;
                     gap: 15px;
-                    align-items: center;
                     justify-content: center;
-                    border: 1px solid $secondary_color;
                     background-color: $secondary_color;
-                    padding-block: 15px;
-                    border-radius: 30px;
-                    width: 170px;
                     color: white;
-
-                    & a:hover {
-                        cursor: pointer;
-                        text-decoration: underline;
-                    }
                 }
             }
         }   
@@ -268,11 +252,10 @@ main {
         padding: 50px 200px;
 
         &__pres {
-            display: flex;
-            justify-content: space-between;
+            @include flex-between;
             align-items: flex-end;
 
-            &__p{
+            &__p{   
                 color: black;
                 font-weight: 500;
                 font-size: 1.2rem;   
@@ -286,29 +269,13 @@ main {
             }
 
             &__btn {
-               cursor: pointer;
-                    display: flex;
-                    gap: 15px;
-                    align-items: center;    
-                    justify-content: center;
-                    border: 1px solid $secondary_color;
-                    padding-block: 15px;
-                    border-radius: 30px;
-                    width: 170px;
-                & a{
-                    color: $secondary_color;
-                    font-weight: 500;
-                }
-                & a:hover {
-                    text-decoration: underline;
-                }
+                    @include btn;                
             }
         }
         
         &__container {
-            display: flex;
+            @include flex-between;
             flex-wrap: wrap;
-            justify-content: space-between;
             margin-top: 20px;
 
             &__box {
@@ -338,8 +305,7 @@ main {
         }
 
         .friend {
-            display: flex;
-            justify-content: space-between;
+            @include flex-between;
             align-items: center;
             font-family: $font;
             color: $secondary_color;
@@ -347,8 +313,7 @@ main {
             border-radius: 30px;
             margin-top: 60px;
             &__more {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 align-items: flex-end;
                 margin-right: 100px;
 
@@ -374,19 +339,7 @@ main {
                 gap: 30px;
                 cursor: pointer;
                 &__intro {
-                    cursor: pointer;
-                    display: flex;
-                    gap: 15px;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid $secondary_color;
-                    padding-block: 15px;
-                    border-radius: 30px;
-                    width: 170px;
-
-                    & a:hover {
-                        text-decoration: underline;
-                    }
+                    @include btn;
                     & img {
                         border: 1px solid $secondary_color;
                         border-radius: 50%;
@@ -394,21 +347,10 @@ main {
                 }
 
                 &__explore {
-                    display: flex;
-                    gap: 15px;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid $secondary_color;
+                    @include btn;
                     background-color: $secondary_color;
-                    padding-block: 15px;
-                    border-radius: 30px;
-                    width: 170px;
                     color: white;
 
-                    & a:hover {
-                        cursor: pointer;
-                        text-decoration: underline;
-                    }
                 }
             }
 
@@ -419,8 +361,7 @@ main {
         
 
         &__know {
-            display: flex;
-            justify-content: space-between;
+            @include flex-between;
             align-items: flex-end;
             margin-top: 50px;
 
@@ -438,34 +379,16 @@ main {
             }
 
             &__btn {
-                    cursor: pointer;
-                    display: flex;
-                    gap: 15px;
-                    align-items: center;    
-                    justify-content: center;
-                    border: 1px solid $secondary_color;
-                    padding-block: 15px;
-                    border-radius: 30px;
-                    width: 170px;
-                & a{
-                    color: $secondary_color;
-                    font-weight: 500;
-                }
-
-                 a:hover {
-                    text-decoration: underline;
-                }
+                @include btn;
             }
         }
 
 
         .knowledge {
-            display: flex;
-            justify-content: space-between;
+            @include flex-between;
             margin-top: 20px;
             &__box {
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 width: 32%;
                 padding: 10px;
                 background-color: white;
@@ -511,8 +434,7 @@ main {
 
     .register {
         background-color: $secondary_color;
-        display: flex;
-        align-items: center;
+        @include flex-center;
         justify-content: space-around;
         padding: 50px 20px;
         border-radius: 20px;
@@ -525,29 +447,31 @@ main {
         }
 
         &__input {
+            @include flex-center;
             border-radius: 10px;
             width: 60%;
-            display: flex;
             padding: 15px;
             background-color: white;
-            align-items: center;
             gap: 10px;
             
             &__mail {
+            font-size: 1.3rem;
                 padding: 20px 30px;
                 width: 70%;
                 border: 1px solid #99A2A5;
                 border-radius: 10px;
                 color: $secondary_color;
-                font-family: 'Gilroy', sans-serif ;
+                font-family: $font ;
                 font-weight: 700;
             }
 
             &__btn {
                 width: 30%;
+                font-size: 1.3rem;
                 text-align: center;
                 background-color: $secondary_color;
                 color: white;
+                font-weight: 600;
                 padding: 20px 10px;
                 border-radius: 10px;
                 cursor: pointer;
@@ -558,8 +482,7 @@ main {
 
     &__nav {
         padding-block: 40px;
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
 
         &__list {
             display: flex;
@@ -569,6 +492,9 @@ main {
             a{
                 text-decoration: none;
                 color: $secondary_color
+            }
+            a:hover {
+                text-decoration: underline;
             }
         }
 
@@ -582,8 +508,7 @@ main {
     }
 
     &__end {
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         align-items: center;
         color: #99A2A5;
         padding-block:40px ;
