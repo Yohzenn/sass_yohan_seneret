@@ -1,0 +1,36 @@
+@use 'variables';
+
+
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin btn {
+    border-radius: variables.$radius;
+    cursor: pointer;
+    display:flex;
+    font-weight: 500;
+    align-items: center;
+    border: 1px solid variables.$secondary_color;
+    padding-block: 15px;
+    width: 170px;
+    justify-content: center;
+    gap: 15px;
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
