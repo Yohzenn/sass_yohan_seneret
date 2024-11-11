@@ -1,5 +1,37 @@
 $primary_color: #FCEED5;
 $secondary_color: #003459;
+$font: 'Gilroy', sans-serif;
+$radius: 30px;
+$text-white: white;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin btn {
+    border-radius: $radius;
+    cursor: pointer;
+    display:flex;
+    font-weight: 500;
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
 
 * {
     padding: 0;
@@ -52,11 +84,11 @@ $secondary_color: #003459;
 
 body{
     background-color: $primary_color;
-    font-family: 'Gilroy', sans-serif;
+    font-family: $font;
 }
 
 header {
-    font-family: 'Gilroy', sans-serif;
+    font-family: $font;
     font-weight: 700;
     color: $secondary_color;
     padding:50px;
@@ -67,8 +99,8 @@ header {
 
     .nav {
         display: flex ;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         width: 100%;
         margin-inline: 200px;
         flex-wrap: wrap;
@@ -103,14 +135,15 @@ header {
 
             &__search {
                 padding: 10px 20px;
+                border-radius: 30px;
                 background-color: white;
                 display: flex;
+                align-items: center;
                 gap: 15px;
-                border-radius: 30px;
                 width: 350px;
                 & input {
                     padding: 5px ;
-                    font-family: 'Gilroy', sans-serif;
+                    font-family: $font;
                     font-weight: 500;
                     color: inherit;
                     border: none;
@@ -157,7 +190,7 @@ main {
         justify-content: space-between;
         width: 100%;
         .title {
-            font-family: 'Gilroy', sans-serif;
+            font-family: $font;
             font-weight: 700;
             color: $secondary_color;
             padding-left: 200px;
@@ -196,8 +229,9 @@ main {
                     padding-block: 15px;
                     border-radius: 30px;
                     width: 170px;
+                    background-color: $primary_color;
 
-                    & p:hover {
+                    & a:hover {
                         text-decoration: underline;
                     }
                     & img {
@@ -218,7 +252,7 @@ main {
                     width: 170px;
                     color: white;
 
-                    & p:hover {
+                    & a:hover {
                         cursor: pointer;
                         text-decoration: underline;
                     }
@@ -261,9 +295,12 @@ main {
                     padding-block: 15px;
                     border-radius: 30px;
                     width: 170px;
-                & p{
+                & a{
                     color: $secondary_color;
                     font-weight: 500;
+                }
+                & a:hover {
+                    text-decoration: underline;
                 }
             }
         }
@@ -304,7 +341,7 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: 'Gilroy', sans-serif;
+            font-family: $font;
             color: $secondary_color;
             background-color: $primary_color;
             border-radius: 30px;
@@ -347,7 +384,7 @@ main {
                     border-radius: 30px;
                     width: 170px;
 
-                    & p:hover {
+                    & a:hover {
                         text-decoration: underline;
                     }
                     & img {
@@ -368,7 +405,7 @@ main {
                     width: 170px;
                     color: white;
 
-                    & p:hover {
+                    & a:hover {
                         cursor: pointer;
                         text-decoration: underline;
                     }
@@ -401,7 +438,7 @@ main {
             }
 
             &__btn {
-               cursor: pointer;
+                    cursor: pointer;
                     display: flex;
                     gap: 15px;
                     align-items: center;    
@@ -410,9 +447,13 @@ main {
                     padding-block: 15px;
                     border-radius: 30px;
                     width: 170px;
-                & p{
+                & a{
                     color: $secondary_color;
                     font-weight: 500;
+                }
+
+                 a:hover {
+                    text-decoration: underline;
                 }
             }
         }

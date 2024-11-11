@@ -50,8 +50,8 @@ header {
 }
 header .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin-inline: 200px;
   flex-wrap: wrap;
@@ -78,10 +78,11 @@ header .nav__button {
 }
 header .nav__button__search {
   padding: 10px 20px;
+  border-radius: 30px;
   background-color: white;
   display: flex;
+  align-items: center;
   gap: 15px;
-  border-radius: 30px;
   width: 350px;
 }
 header .nav__button__search input {
@@ -163,8 +164,9 @@ main .container .title__btn__intro {
   padding-block: 15px;
   border-radius: 30px;
   width: 170px;
+  background-color: #FCEED5;
 }
-main .container .title__btn__intro p:hover {
+main .container .title__btn__intro a:hover {
   text-decoration: underline;
 }
 main .container .title__btn__intro img {
@@ -183,7 +185,7 @@ main .container .title__btn__explore {
   width: 170px;
   color: white;
 }
-main .container .title__btn__explore p:hover {
+main .container .title__btn__explore a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -220,9 +222,12 @@ main .article__pres__btn {
   border-radius: 30px;
   width: 170px;
 }
-main .article__pres__btn p {
+main .article__pres__btn a {
   color: #003459;
   font-weight: 500;
+}
+main .article__pres__btn a:hover {
+  text-decoration: underline;
 }
 main .article__container {
   display: flex;
@@ -297,7 +302,7 @@ main .article .friend__more__btn__intro {
   border-radius: 30px;
   width: 170px;
 }
-main .article .friend__more__btn__intro p:hover {
+main .article .friend__more__btn__intro a:hover {
   text-decoration: underline;
 }
 main .article .friend__more__btn__intro img {
@@ -316,7 +321,7 @@ main .article .friend__more__btn__explore {
   width: 170px;
   color: white;
 }
-main .article .friend__more__btn__explore p:hover {
+main .article .friend__more__btn__explore a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -348,9 +353,12 @@ main .article__know__btn {
   border-radius: 30px;
   width: 170px;
 }
-main .article__know__btn p {
+main .article__know__btn a {
   color: #003459;
   font-weight: 500;
+}
+main .article__know__btn a:hover {
+  text-decoration: underline;
 }
 main .article .knowledge {
   display: flex;
